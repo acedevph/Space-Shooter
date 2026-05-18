@@ -479,15 +479,6 @@ public class SpaceShooter extends JPanel implements ActionListener, KeyListener 
         g.drawString(s, (W - fm.stringWidth(s)) / 2, y);
     }
 
-    // ══════════════════════════════════════════════════════════════════════
-    //  SHIP PLACEHOLDERS  (replace these drawXxxShipAt methods with sprites)
-    // ══════════════════════════════════════════════════════════════════════
-
-    /**
-     * PLACEHOLDER – Player Ship
-     * Replace this method with your actual sprite / Image drawing code.
-     * The ship is drawn centred on (cx, cy) and scaled by `scale`.
-     */
     static void drawPlayerShipAt(Graphics2D g, int cx, int cy, float scale) {
         Graphics2D g2 = (Graphics2D) g.create();
         g2.translate(cx, cy);
@@ -530,11 +521,6 @@ public class SpaceShooter extends JPanel implements ActionListener, KeyListener 
         g2.dispose();
     }
 
-    /**
-     * PLACEHOLDER – Enemy Ship (3 types: 0=grunt, 1=cruiser, 2=commander)
-     * Replace this method with your actual sprite / Image drawing code.
-     * The ship is drawn centred on (cx, cy) and scaled by `scale`.
-     */
     static void drawEnemyShipAt(Graphics2D g, int cx, int cy, int type, float scale) {
         Graphics2D g2 = (Graphics2D) g.create();
         g2.translate(cx, cy);
